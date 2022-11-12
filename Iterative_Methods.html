@@ -4,38 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "Iterative_Methods.css">
     <title>Iterative Methods</title>
 </head>
 <body>
-    <p>Enter Equation 1</p>
-    <p>(x1)x + (y1)y + (z1)z = c1</p>
-    <p>x1, y1, z1 and c1 are constants</p>
-    x1: <input type = "number" name = "x1" id = "x1"><br>
-    y1: <input type = "number" name = "y1" id = "y1"><br>
-    z1: <input type = "number" name = "z1" id = "z1"><br>
-    c1: <input type = "number" name = "c1" id = "c1"><br>
+    <div class="header">
+        <h1>Linear Algebra Iterative Methods Calculator</h1>
+        <p>Gauss Seidel Method</p>
+    </div>
+    <div class = "leftcolumn">      
+        <p>Enter Equation 1</p>
+        <p>(x1)x + (y1)y + (z1)z = c1</p>
+        <p>x1, y1, z1 and c1 are constants</p>
+        x1: <input type = "number" name = "x1" id = "x1"><br>
+        y1: <input type = "number" name = "y1" id = "y1"><br>
+        z1: <input type = "number" name = "z1" id = "z1"><br>
+        c1: <input type = "number" name = "c1" id = "c1"><br>
 
-    <p>Enter Equation 2</p>
-    <p>(x2)x + (y2)y + (z2)z = c2</p>
-    <p>x2, y2, z2 and c2 are constants</p>
-    x2: <input type = "number" name = "x2" id = "x2"><br>
-    y2: <input type = "number" name = "y2" id = "y2"><br>
-    z2: <input type = "number" name = "z2" id = "z2"><br>
-    c2: <input type = "number" name = "c2" id = "c2"><br>
+        <p>Enter Equation 2</p>
+        <p>(x2)x + (y2)y + (z2)z = c2</p>
+        <p>x2, y2, z2 and c2 are constants</p>
+        x2: <input type = "number" name = "x2" id = "x2"><br>
+        y2: <input type = "number" name = "y2" id = "y2"><br>
+        z2: <input type = "number" name = "z2" id = "z2"><br>
+        c2: <input type = "number" name = "c2" id = "c2"><br>
+        
+        <p>Enter Equation 3</p>
+        <p>(x3)x + (y3)y + (z3)z = c3</p>
+        <p>x3, y3, z3 and c3 are constants</p>
+        x3: <input type = "number" name = "x3" id = "x3"><br>
+        y3: <input type = "number" name = "y3" id = "y3"><br>
+        z3: <input type = "number" name = "z3" id = "z3"><br>
+        c3: <input type = "number" name = "c3" id = "c3"><br>
+
+        <button type = "button" id = "calcBtn" onclick = "document.getElementById('ttdetails').style.display = 'block'">Gauss Seidel</button>
     
-    <p>Enter Equation 3</p>
-    <p>(x3)x + (y3)y + (z3)z = c3</p>
-    <p>x3, y3, z3 and c3 are constants</p>
-    x3: <input type = "number" name = "x3" id = "x3"><br>
-    y3: <input type = "number" name = "y3" id = "y3"><br>
-    z3: <input type = "number" name = "z3" id = "z3"><br>
-    c3: <input type = "number" name = "c3" id = "c3"><br>
-
-    <button id = "calcBtn">Gauss Seidel</button>
-    <p id = "resultDisplay1"></p>
-    <p id = "resultDisplay2"></p>
-    <p id = "resultDisplay3"></p>
-    <p id = "resultDisplay4"></p>
-    <script src = "Iterative_Methods.js"></script>
+        
+    </div>
+    <div class = "rightcolumn">
+        <table id = "ttdetails" style = "display: none;">
+            <tr>
+            <th style = "width: 25%; height: 10vh;"></th>
+            <th style = "width: 25%;">x</th>
+            <th style = "width: 25%;">y</th>
+            <th style = "width: 25%;">z</th>
+            </tr>
+            <tr>
+            <td>Initial Value</td>
+            <td style = "height: 8vh;">0.0000</td>
+            <td>0.0000</td>
+            <td>0.0000</td>
+            </tr>
+            <tr>
+            <td>1st Iteration</td>
+            <td id = "resultDisplay_x1" style = "height: 8vh;"></td>
+            <td id = "resultDisplay_y1"></td>
+            <td id = "resultDisplay_z1"></td>
+            </tr>
+            <tr>
+            <td>2nd Iteration</td>
+            <td id = "resultDisplay_x2" style = "height: 8vh;"></td>
+            <td id = "resultDisplay_y2"></td>
+            <td id = "resultDisplay_z2"></td>
+            </tr>
+            <tr>
+            <td>3rd Iteration</td>
+            <td id = "resultDisplay_x3" style = "height: 8vh;"></td>
+            <td id = "resultDisplay_y3"></td>
+            <td id = "resultDisplay_z3"></td>
+            </tr>
+            <tr>
+            <td>4th Iteration</td>
+            <td id = "resultDisplay_x4" style = "height: 8vh;"></td>
+            <td id = "resultDisplay_y4"></td>
+            <td id = "resultDisplay_z4"></td>
+            </tr>
+        </table>
+        <script src = "Iterative_Methods.js"></script>
+    </div>
 </body>
 </html>

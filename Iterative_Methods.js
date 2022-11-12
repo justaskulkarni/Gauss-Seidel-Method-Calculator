@@ -56,22 +56,32 @@ function calculate(){
 
     
     x_display = (c1_coeff - z_display * z1_coeff - y_display * y1_coeff) / x1_coeff;
+    resultDisplay_x1.innerHTML = x_display;
     y_display = (c2_coeff - z_display * z2_coeff - x_display * x2_coeff) / y2_coeff;
+    resultDisplay_y1.innerHTML = y_display;
     z_display = (c3_coeff - x_display * x3_coeff - y_display * y3_coeff) / z3_coeff;
-    resultDisplay1.innerHTML = x_display + " " + y_display + " " + z_display; 
+    resultDisplay_z1.innerHTML = z_display; 
 
     x_display = (c1_coeff - z_display * z1_coeff - y_display * y1_coeff) / x1_coeff;
+    resultDisplay_x2.innerHTML = x_display;
     y_display = (c2_coeff - z_display * z2_coeff - x_display * x2_coeff) / y2_coeff;
+    resultDisplay_y2.innerHTML = y_display;
     z_display = (c3_coeff - x_display * x3_coeff - y_display * y3_coeff) / z3_coeff;
-    resultDisplay2.innerHTML = x_display + " " + y_display + " " + z_display; 
+    resultDisplay_z2.innerHTML = z_display;
+     
 
     x_display = (c1_coeff - z_display * z1_coeff - y_display * y1_coeff) / x1_coeff;
+    resultDisplay_x3.innerHTML = x_display;
     y_display = (c2_coeff - z_display * z2_coeff - x_display * x2_coeff) / y2_coeff;
+    resultDisplay_y3.innerHTML = y_display;
     z_display = (c3_coeff - x_display * x3_coeff - y_display * y3_coeff) / z3_coeff;
-    resultDisplay3.innerHTML = x_display + " " + y_display + " " + z_display;
+    resultDisplay_z3.innerHTML = z_display;
     
     x_display = (c1_coeff - z_display * z1_coeff - y_display * y1_coeff) / x1_coeff;
+    resultDisplay_x4.innerHTML = x_display;
     y_display = (c2_coeff - z_display * z2_coeff - x_display * x2_coeff) / y2_coeff;
+    resultDisplay_y4.innerHTML = y_display;
     z_display = (c3_coeff - x_display * x3_coeff - y_display * y3_coeff) / z3_coeff;
-    resultDisplay4.innerHTML = x_display + " " + y_display + " " + z_display;
+    resultDisplay_z4.innerHTML = z_display;
+
 }
